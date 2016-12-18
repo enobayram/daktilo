@@ -1,19 +1,17 @@
 # Site settings
-title: Daktilo
+title: Unsubstantiated Observations
 description: >
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Some ramblings from a guy about C++, functional programming, Haskell and stuff.
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://hitchhiker.ma" # the base hostname & protocol for your site
+url: "https://enobayram.github.io" # the base hostname & protocol for your site
 
 author:
-  fullname: Motaquillah Maddane
-  googleplus: https://www.google.com/+MotaquillahMaddane
-  github: kronik3r
-  twitter: electrik_frog
-  # disqus: your_disqus_forum_shortname
+  fullname: Enis Bayramoğlu
+#  googleplus: https://www.google.com/+MotaquillahMaddane
+  github: enobayram
+#  twitter: electrik_frog
+  disqus: enisbayramoglu
 
 # google_analytics: 'UA-XXXXXXXX-X'
 
@@ -27,3 +25,7 @@ exclude: ["README.md", "README.html"]
 # Build settings
 highlighter: null
 markdown: kramdown
+
+kramdown:
+  input: GFM
+
