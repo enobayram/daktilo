@@ -67,7 +67,8 @@ overload_t<Funcs...> overload(Funcs ... funcs){
 
 The problem with that code is the `using Funcs::operator()...;` bit, which isn't valid C++. We need something along those lines, because otherwise the call operator of `overload_t<...>` would be ambigious (since more than one of its bases define it).
 
-I've found three implementations of this `overload` concept: 
+I've found three implementations of this `overload` concept:
+
  * [std::overload proposal](https://github.com/viboes/std-make/blob/master/include/experimental/fundamental/v3/functional/overload.hpp)
  * [boost::hana](https://github.com/boostorg/hana/blob/master/include/boost/hana/functional/overload.hpp)
  * [vrm_core](https://github.com/SuperV1234/vrm_core/blob/437a0afb35385250cd75c22babaeeecbfa4dcacc/include/vrm/core/overload/make_overload.hpp)
