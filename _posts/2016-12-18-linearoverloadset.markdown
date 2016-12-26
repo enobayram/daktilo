@@ -49,7 +49,7 @@ That's very nice, we're building a local scope for overload resolution to take p
 
 ## How is it Implemented?
 
-The first time I felt the need for the `overload` utility, I tried to come up with how it could be implemented. The following definition would do the job fine, if only it were valid C++!!!
+The first time I felt the need for the `overload` utility, I tried to come up with how it could be implemented. The following definition would do the job fine, but it's [valid only in C++17](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0195r1.html), and no compiler implements it at the moment.
 
 ``` cpp
 
